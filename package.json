@@ -1,0 +1,39 @@
+{
+  "name": "todo-backend",
+  "version": "1.0.0",
+  "description": "to do app using express.js with typescript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tarak1246/todo-backend.git"
+  },
+  "author": "Taraka (tarakasaireddyseelam@gmail.com)",
+  "license": "ISC",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/Tarak1246/todo-backend/issues"
+  },
+  "homepage": "https://github.com/Tarak1246/todo-backend#readme",
+  "devDependencies": {
+    "@prisma/client": "^6.2.1",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "prisma": "^6.2.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3",
+    "zod": "^3.24.1"
+  },
+  "dependencies": {
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}

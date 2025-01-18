@@ -8,6 +8,7 @@ export const sendSuccess = (
   ): void => {
     res.status(statusCode).json({
       status: "success",
+      statusCode,
       message,
       data,
     });
@@ -18,7 +19,8 @@ export const sendSuccess = (
     errorMessage: string,
     statusCode = 400
   ): void => {
-    res.status(statusCode).json({
+    res.json({
+      statusCode,
       status: "error",
       message: errorMessage,
     });
